@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>: ToDo List :</h1>
+        
+        <div class="res">
+            <label for="task">Task : </label>
+            <input type="text" name="task" id="task">
+
+            <button onclick="addTask()" type="button">Add</button> 
+        </div>
+        <div id="list">
+            <!-- Tasks will be added dynamically here -->
+        </div>
+    </div>
+    <button id="clear" onclick="clearTasks()" type="button">Clear All</button> 
+
+    <script src="script.js"></script>
+</body>
+</html>
